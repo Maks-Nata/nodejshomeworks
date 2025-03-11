@@ -1,0 +1,23 @@
+{
+  "name": "nodejshomeworks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/mongoose": "^5.11.97",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "tsc-watch": "^6.2.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
