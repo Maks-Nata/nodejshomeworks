@@ -30,6 +30,17 @@ app.post("/users",async (req,res)=>{
     const newUser=await userService.create(user)
     res.json(newUser)
 })
+app.put("/users/:id",async (req,res)=>{
+    const user=req.body
+    const {id} = req.params;
+    const newUser=await userService.updateById(id,user)
+    res.json(newUser)
+})
+app.delete("/users/:id", async (req,res)=>{
+    const {id} = req.params;
+    await userService.deleteById(id)
+    res.end()
+} )
 app.listen(5000,()=>{
     console.log("server running on 5000")
 })
